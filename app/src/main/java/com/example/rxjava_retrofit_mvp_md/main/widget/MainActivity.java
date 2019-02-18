@@ -1,6 +1,7 @@
 package com.example.rxjava_retrofit_mvp_md.main.widget;
 
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
@@ -22,12 +23,14 @@ import com.example.rxjava_retrofit_mvp_md.base.BaseActivity;
 import com.example.rxjava_retrofit_mvp_md.main.presenter.MainPresenter;
 import com.example.rxjava_retrofit_mvp_md.main.presenter.MainPresenterImpl;
 import com.example.rxjava_retrofit_mvp_md.main.view.MainView;
+import com.trello.rxlifecycle.components.support.RxAppCompatActivity;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import me.yokeyword.fragmentation.SupportActivity;
 
 /**
  * Created by KomoriWu
@@ -47,6 +50,7 @@ public class MainActivity extends BaseActivity implements MainView {
     FloatingActionButton floatingActionButton;
     private MainPresenter mMainPresenter;
     private PagerAdapter mPagerAdapter;
+
     @Override
     public void init() {
         setContentView(R.layout.activity_main);
@@ -56,6 +60,7 @@ public class MainActivity extends BaseActivity implements MainView {
         initListener();
         initViewPagerAndTabs();
     }
+
 
     private void initListener() {
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {

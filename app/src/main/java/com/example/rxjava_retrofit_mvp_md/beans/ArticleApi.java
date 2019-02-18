@@ -1,5 +1,7 @@
 package com.example.rxjava_retrofit_mvp_md.beans;
 
+import android.app.Activity;
+
 import com.example.rxjava_retrofit_mvp_md.http.HttpService;
 import com.example.rxjava_retrofit_mvp_md.http.api.BaseApi;
 import com.example.rxjava_retrofit_mvp_md.http.listener.HttpOnNextListener;
@@ -8,6 +10,7 @@ import com.trello.rxlifecycle.components.support.RxAppCompatActivity;
 import java.util.HashMap;
 import java.util.Map;
 
+import me.yokeyword.fragmentation.SupportFragment;
 import retrofit2.Retrofit;
 import rx.Observable;
 
@@ -23,6 +26,13 @@ public class ArticleApi extends BaseApi {
     public ArticleApi(RxAppCompatActivity rxAppCompatActivity, String page, String size,
                       HttpOnNextListener listener) {
         super(rxAppCompatActivity, listener);
+        this.mPage = page;
+        this.mSize = size;
+        setShowProgress(false);
+    }
+    public ArticleApi(SupportFragment supportfragment, String page, String size,
+                      HttpOnNextListener listener) {
+        super(supportfragment, listener);
         this.mPage = page;
         this.mSize = size;
         setShowProgress(false);

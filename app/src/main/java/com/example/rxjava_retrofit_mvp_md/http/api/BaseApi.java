@@ -4,6 +4,7 @@ import com.example.rxjava_retrofit_mvp_md.http.listener.HttpOnNextListener;
 import com.example.rxjava_retrofit_mvp_md.utils.Utils;
 import com.trello.rxlifecycle.components.support.RxAppCompatActivity;
 
+import me.yokeyword.fragmentation.SupportFragment;
 import retrofit2.Retrofit;
 import rx.Observable;
 import rx.functions.Func0;
@@ -15,6 +16,7 @@ import rx.functions.Func0;
 
 public abstract class BaseApi<T> implements Func0<T> {
     private RxAppCompatActivity mRxAppCompatActivity;
+    private SupportFragment fragment;
     private HttpOnNextListener mListener;
     private boolean mIsShowProgress;
     private boolean mIsCancel;
@@ -25,6 +27,13 @@ public abstract class BaseApi<T> implements Func0<T> {
 
     public BaseApi(RxAppCompatActivity rxAppCompatActivity, HttpOnNextListener listener) {
         this.mRxAppCompatActivity = rxAppCompatActivity;
+        this.mListener = listener;
+        setBaseUrl(Utils.URL);
+        setConnectionTime(6);
+        setShowProgress(true);
+    }
+    public BaseApi(SupportFragment fragment, HttpOnNextListener listener) {
+        this.fragment = fragment;
         this.mListener = listener;
         setBaseUrl(Utils.URL);
         setConnectionTime(6);

@@ -17,6 +17,7 @@ import com.example.rxjava_retrofit_mvp_md.article.presenter.ArticlePresenterImpl
 import com.example.rxjava_retrofit_mvp_md.article.view.ArticleView;
 import com.example.rxjava_retrofit_mvp_md.base.BaseFragment;
 import com.example.rxjava_retrofit_mvp_md.beans.ArticleBody;
+import com.example.rxjava_retrofit_mvp_md.delegates.PlaneDelegate;
 import com.example.rxjava_retrofit_mvp_md.refresh.RefreshLayout;
 import com.example.rxjava_retrofit_mvp_md.refresh.SpaceItemDecoration;
 import com.example.rxjava_retrofit_mvp_md.refresh.SwipeRefreshLayoutDirection;
@@ -24,13 +25,14 @@ import com.example.rxjava_retrofit_mvp_md.utils.Utils;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import me.yokeyword.fragmentation.SupportFragment;
 
 /**
  * Created by KomoriWu
  * on 2017-03-24.
  */
 
-public class ArticleFragment extends BaseFragment implements ArticleView,
+public class ArticleFragment extends PlaneDelegate implements ArticleView,
         RefreshLayout.OnRefreshListener {
     public static final String TAG = ArticleFragment.class.getSimpleName();
     @BindView(R.id.recycler_view)
@@ -44,29 +46,17 @@ public class ArticleFragment extends BaseFragment implements ArticleView,
     private ArticleAdapter mArticleAdapter;
     private ArticlePresenter mArticlePresenter;
 
-    @Override
+/*    @Override
     public View initView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_article, null);
         ButterKnife.bind(this, view);
         initData();
         return view;
-    }
+    }*/
 
-    private void initData() {
-        mArticlePresenter = new ArticlePresenterImpl(getActivity(), this);
-        refreshLayout.setDirection(SwipeRefreshLayoutDirection.BOTH);
-        refreshLayout.setOnRefreshListener(this);
-        refreshLayout.setColorScheme(R.color.colorPrimary, R.color.colorAccent,
-                R.color.light_primary_color);
-        onRefresh(SwipeRefreshLayoutDirection.TOP);
-        recyclerView.setHasFixedSize(true);
-        recyclerView.setItemAnimator(new DefaultItemAnimator());
-        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-        int spacingInPixels = getResources().getDimensionPixelSize(R.dimen.item_space);
-        recyclerView.addItemDecoration(new SpaceItemDecoration(spacingInPixels));
-        mArticleAdapter = new ArticleAdapter(getActivity());
-        recyclerView.setAdapter(mArticleAdapter);
-    }
+/*    private void initData() {
+
+    }*/
 
     @Override
     public void showProgress() {
@@ -115,5 +105,34 @@ public class ArticleFragment extends BaseFragment implements ArticleView,
         }
 
         mArticlePresenter.LodeArticles(mPage + "", mSize + "");
+    }
+
+    @Override
+    protected Object setLayout() {
+        return R.layout.fragment_article;
+    }
+
+    @Override
+    protected void initData(Bundle arguments) {
+
+        mArticlePresenter = new ArticlePresenterImpl(getContext(), this);
+        refreshLayout.setDirection(SwipeRefreshLayoutDirection.BOTH);
+        refreshLayout.setOnRefreshListener(this);
+        refreshLayout.setColorScheme(R.color.colorPrimary, R.color.colorAccent,
+                R.color.light_primary_color);
+        onRefresh(SwipeRefreshLayoutDirection.TOP);
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setItemAnimator(new DefaultItemAnimator());
+        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+        int spacingInPixels = getResources().getDimensionPixelSize(R.dimen.item_space);
+        recyclerView.addItemDecoration(new SpaceItemDecoration(spacingInPixels));
+        mArticleAdapter = new ArticleAdapter(getActivity());
+        recyclerView.setAdapter(mArticleAdapter);
+
+    }
+
+    @Override
+    protected void init() {
+
     }
 }
