@@ -11,6 +11,7 @@ import com.example.rxjava_retrofit_mvp_md.base.BaseActivity;
 import com.example.rxjava_retrofit_mvp_md.delegates.PlaneDelegate;
 import com.example.rxjava_retrofit_mvp_md.utils.BarUtils;
 
+import butterknife.ButterKnife;
 import me.yokeyword.fragmentation.SupportActivity;
 
 public abstract class ProxyActivity extends SupportActivity {
@@ -21,6 +22,8 @@ public abstract class ProxyActivity extends SupportActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        ButterKnife.bind(this);
         //设置状态栏颜色
         BarUtils.setStatusBarColor(this,getResources().getColor(R.color.color_000000));
         initContainer(savedInstanceState);

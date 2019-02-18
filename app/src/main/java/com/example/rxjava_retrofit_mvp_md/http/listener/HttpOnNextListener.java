@@ -8,11 +8,12 @@ package com.example.rxjava_retrofit_mvp_md.http.listener;
 public abstract class HttpOnNextListener<T> {
     public abstract void onNext(T t);
 
-    public void onError(Throwable e) {
+    public void onError(Throwable e,String HttpException) {
 
     }
 
     public void onCancel() {
 
     }
+
 }

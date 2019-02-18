@@ -2,18 +2,22 @@ package com.example.rxjava_retrofit_mvp_md.http;
 
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
+import android.util.Log;
 
 import com.example.rxjava_retrofit_mvp_md.http.api.BaseApi;
 import com.example.rxjava_retrofit_mvp_md.http.listener.HttpOnNextListener;
 import com.example.rxjava_retrofit_mvp_md.utils.Utils;
 import com.trello.rxlifecycle.components.support.RxAppCompatActivity;
 
+import java.io.IOException;
+import java.net.ConnectException;
+import java.net.SocketTimeoutException;
+import java.net.UnknownHostException;
+import java.net.UnknownServiceException;
+
+import retrofit2.adapter.rxjava.HttpException;
 import rx.Subscriber;
 
-/**
- * Created by KomoriWu
- * on 2017-03-26.
- */
 
 public class ProgressSubscriber<T> extends Subscriber<T> {
     private boolean mIsShowProgress;
@@ -84,8 +88,22 @@ public class ProgressSubscriber<T> extends Subscriber<T> {
     @Override
     public void onError(Throwable e) {
         dismissProgressDialog();
+        String s = e.getMessage();
+        if (e instanceof HttpException) {
+            s = "网络异常";
+        } else if (e instanceof SocketTimeoutException) {  //VPN open
+            s = "服务器响应超时";
+        } else if (e instanceof ConnectException) {
+            s = "连接服务器异常";
+        } else if (e instanceof UnknownHostException) {
+            s = "无网络连接，请检查网络是否开启";
+        } else if (e instanceof UnknownServiceException) {
+            s = "未知的服务器错误";
+        } else if (e instanceof IOException) {  //飞行模式等
+            s = "连接服务器异常";
+        }
         if (mHttpOnNextListener != null) {
-            mHttpOnNextListener.onError(e);
+            mHttpOnNextListener.onError(e,s);
             Utils.showAlertDialog(mRxAppCompatActivity, e.getMessage());
         }
     }
@@ -96,4 +114,5 @@ public class ProgressSubscriber<T> extends Subscriber<T> {
             mHttpOnNextListener.onNext(t);
         }
     }
+
 }

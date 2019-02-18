@@ -27,10 +27,6 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import me.yokeyword.fragmentation.SupportFragment;
 
-/**
- * Created by KomoriWu
- * on 2017-03-24.
- */
 
 public class ArticleFragment extends PlaneDelegate implements ArticleView,
         RefreshLayout.OnRefreshListener {

@@ -1,7 +1,5 @@
 package com.example.rxjava_retrofit_mvp_md.beans;
 
-import android.app.Activity;
-
 import com.example.rxjava_retrofit_mvp_md.http.HttpService;
 import com.example.rxjava_retrofit_mvp_md.http.api.BaseApi;
 import com.example.rxjava_retrofit_mvp_md.http.listener.HttpOnNextListener;

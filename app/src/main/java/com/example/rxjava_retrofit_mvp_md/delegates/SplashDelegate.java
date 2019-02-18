@@ -1,8 +1,10 @@
 package com.example.rxjava_retrofit_mvp_md.delegates;
 
 import android.os.Bundle;
+import android.os.Handler;
 
 import com.example.rxjava_retrofit_mvp_md.R;
+import com.example.rxjava_retrofit_mvp_md.login.widget.LoginDelegate;
 
 
 /**
@@ -29,6 +31,7 @@ public class SplashDelegate extends PlaneDelegate {
     @Override
     protected void initData(Bundle arguments) {
 
+        start(LoginDelegate.newInstance());
     }
 
     @Override

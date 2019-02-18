@@ -18,7 +18,8 @@ import com.nostra13.universalimageloader.core.display.RoundedBitmapDisplayer;
  */
 
 public class Utils {
-    public static final String URL = "http://120.24.218.251:8080/geek_wz/";
+    //public static final String URL = "http://120.24.218.251:8080/geek_wz/";
+    public static final String URL = "https://shop.duofriend.com/";
     public static final String GET_ALL_ARTICLES = "Make_ArticleJson";
 
 
