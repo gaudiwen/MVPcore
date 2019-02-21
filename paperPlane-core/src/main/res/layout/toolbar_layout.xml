@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_50"
+    android:fitsSystemWindows="true"
+    android:theme="@style/AppTheme.AppBarOverlay">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/black"
+            app:elevation="1dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/dp_20" />
+
+            <ImageView
+                android:id="@+id/iv_left"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/dp_6"
+                android:paddingLeft="@dimen/dp_12"
+                android:paddingRight="@dimen/dp_12"
+                android:src="@drawable/ic_arrow_back_black_24dp" />
+
+
+            <duofriend.com.paperplane.view.radius.RadiusTextView
+                android:id="@+id/tv_right"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_6"
+                android:gravity="center"
+                android:padding="@dimen/dp_4"
+                android:textSize="@dimen/dp_15"
+                app:rv_textColor="@android:color/white"
+                app:rv_textDisabledColor="@android:color/darker_gray"
+                app:rv_textPressedColor="@android:color/darker_gray" />
+
+            <ImageView
+                android:id="@+id/iv_right"
+                android:layout_width="@dimen/dp_24"
+                android:layout_height="@dimen/dp_24"
+                android:src="@drawable/ic_more_function"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp_10"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/dp_3"
+                android:layout_toLeftOf="@id/iv_right"
+                android:padding="@dimen/dp_10"
+                android:src="@drawable/ic_search_bar"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</android.support.design.widget.AppBarLayout>
+

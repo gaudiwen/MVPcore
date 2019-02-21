@@ -44,8 +44,8 @@ public class ArticleModelImpl implements ArticleModel {
                     }
 
                     @Override
-                    public void onError(Throwable e) {
-                        super.onError(e);
+                    public void onError(Throwable e,String msg) {
+                        super.onError(e,msg);
                         onLoadArticleListListener.onFailure(e);
                     }
                 });

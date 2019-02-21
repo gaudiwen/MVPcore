@@ -43,6 +43,9 @@ public abstract class BaseApi<T> implements Func0<T> {
     public RxAppCompatActivity getRxAppCompatActivity() {
         return mRxAppCompatActivity;
     }
+    public SupportFragment getSupportFragment() {
+        return fragment;
+    }
 
     public void setRxAppCompatActivity(RxAppCompatActivity mRxAppCompatActivity) {
         this.mRxAppCompatActivity = mRxAppCompatActivity;

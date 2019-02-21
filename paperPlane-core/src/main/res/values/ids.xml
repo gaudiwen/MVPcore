@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="delegate_container" type="id"/>
+    <item name="common_view_pager_item_tag" type="id"/>
+    <item name="vp" type="id"/>
+</resources>

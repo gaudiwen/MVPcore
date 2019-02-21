@@ -14,6 +14,7 @@ import com.example.rxjava_retrofit_mvp_md.login.view.LoginView;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import duofriend.com.paperplane.utils.commonutil.ToastUtil;
 
 
 public class LoginDelegate extends PlaneDelegate implements LoginView {
@@ -66,7 +67,8 @@ public class LoginDelegate extends PlaneDelegate implements LoginView {
 
     @Override
     public void login(LoginBean loginBean) {
-        Toast.makeText(getActivity(),"登录成功获取到数据",Toast.LENGTH_SHORT).show();
+
+        ToastUtil.getInstance().showToast("登录成功获取到数据");
     }
 
     @Override

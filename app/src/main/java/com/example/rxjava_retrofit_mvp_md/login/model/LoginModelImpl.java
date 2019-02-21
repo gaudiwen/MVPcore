@@ -19,7 +19,10 @@ public class LoginModelImpl implements LoginModel {
 
             @Override
             public void onNext(LoginBean loginBean) {
-                onLoginListListener.onSuccess(loginBean);
+                if(loginBean.getCode()==1001)
+                    onLoginListListener.onSuccess(loginBean);
+                else
+                    onLoginListListener.onFailure(loginBean.getMsg());
             }
 
             @Override
@@ -35,7 +38,7 @@ public class LoginModelImpl implements LoginModel {
     public interface OnLoginListListener {
         void onSuccess(LoginBean loginBean);
 
-        void onFailure(Throwable e);
+        void onFailure(String msg);
 
     }
 

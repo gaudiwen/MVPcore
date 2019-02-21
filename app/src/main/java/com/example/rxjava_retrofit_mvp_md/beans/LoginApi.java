@@ -28,9 +28,9 @@ public class LoginApi extends BaseApi {
         super(context,listener);
         this.account=account;
         this.psw=psw;
+        setShowProgress(true);
+
     }
-
-
 
     @Override
     public Observable getObservable(Retrofit retrofit) {

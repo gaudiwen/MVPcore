@@ -15,6 +15,7 @@ import java.net.SocketTimeoutException;
 import java.net.UnknownHostException;
 import java.net.UnknownServiceException;
 
+import me.yokeyword.fragmentation.SupportFragment;
 import retrofit2.adapter.rxjava.HttpException;
 import rx.Subscriber;
 
@@ -23,6 +24,7 @@ public class ProgressSubscriber<T> extends Subscriber<T> {
     private boolean mIsShowProgress;
     private HttpOnNextListener mHttpOnNextListener;
     private RxAppCompatActivity mRxAppCompatActivity;
+    private SupportFragment mSupportFragment;
     private ProgressDialog mProgressDialog;
     private BaseApi mApi;
 
@@ -31,25 +33,29 @@ public class ProgressSubscriber<T> extends Subscriber<T> {
         this.mIsShowProgress = api.isShowProgress();
         this.mHttpOnNextListener = api.getListener();
         this.mRxAppCompatActivity = api.getRxAppCompatActivity();
+        this.mSupportFragment =api.getSupportFragment();
         if (api.isShowProgress()) {
             initProgressDialog(api.isIsCancel());
         }
     }
 
     private void initProgressDialog(boolean cancel) {
-        if (mProgressDialog == null && mRxAppCompatActivity != null) {
-            mProgressDialog = new ProgressDialog(mRxAppCompatActivity);
-            mProgressDialog.setCancelable(cancel);
-            if (cancel) {
-                mProgressDialog.setOnCancelListener(new DialogInterface.OnCancelListener() {
-                    @Override
-                    public void onCancel(DialogInterface dialogInterface) {
-                        if (mHttpOnNextListener != null) {
-                            mHttpOnNextListener.onCancel();
+        if (mProgressDialog == null) {
+            if(mSupportFragment!=null){
+
+                mProgressDialog = new ProgressDialog(mSupportFragment.getActivity());
+                mProgressDialog.setCancelable(cancel);
+                if (cancel) {
+                    mProgressDialog.setOnCancelListener(new DialogInterface.OnCancelListener() {
+                        @Override
+                        public void onCancel(DialogInterface dialogInterface) {
+                            if (mHttpOnNextListener != null) {
+                                mHttpOnNextListener.onCancel();
+                            }
+                            onCancelProgress();
                         }
-                        onCancelProgress();
-                    }
-                });
+                    });
+                }
             }
         }
     }
@@ -62,7 +68,7 @@ public class ProgressSubscriber<T> extends Subscriber<T> {
 
     private void showProgressDialog() {
         if (!mIsShowProgress) return;
-        if (mProgressDialog == null || mRxAppCompatActivity == null) return;
+        if (mProgressDialog == null || mSupportFragment == null) return;
         if (!mProgressDialog.isShowing()) {
             mProgressDialog.show();
         }
@@ -102,10 +108,10 @@ public class ProgressSubscriber<T> extends Subscriber<T> {
         } else if (e instanceof IOException) {  //飞行模式等
             s = "连接服务器异常";
         }
-        if (mHttpOnNextListener != null) {
+      /*  if (mHttpOnNextListener != null) {
             mHttpOnNextListener.onError(e,s);
             Utils.showAlertDialog(mRxAppCompatActivity, e.getMessage());
-        }
+        }*/
     }
 
     @Override

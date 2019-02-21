@@ -7,6 +7,7 @@ import com.example.rxjava_retrofit_mvp_md.login.model.LoginModel;
 import com.example.rxjava_retrofit_mvp_md.login.model.LoginModelImpl;
 import com.example.rxjava_retrofit_mvp_md.login.view.LoginView;
 
+import duofriend.com.paperplane.utils.commonutil.ToastUtil;
 import me.yokeyword.fragmentation.SupportFragment;
 
 /**
@@ -33,7 +34,8 @@ public class LoginPresenterImpl implements LoginPresenter, LoginModelImpl.OnLogi
     }
 
     @Override
-    public void onFailure(Throwable e) {
+    public void onFailure(String e) {
+        ToastUtil.getInstance().showToast("请求失败:"+e);
     }
 
 
