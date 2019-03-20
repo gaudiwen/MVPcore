@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr format="color" name="rv_backgroundCheckedColor"/>
+    <attr format="color" name="rv_backgroundColor"/>
+    <attr format="color" name="rv_backgroundDisabledColor"/>
+    <attr format="color" name="rv_backgroundPressedColor"/>
+    <attr format="color" name="rv_backgroundSelectedColor"/>
+    <attr format="reference|color" name="rv_bottomCheckedDrawable"/>
+    <attr format="reference|color" name="rv_bottomDisabledDrawable"/>
+    <attr format="reference|color" name="rv_bottomDrawable"/>
+    <attr format="boolean" name="rv_bottomDrawableColorCircleEnable"/>
+    <attr format="dimension" name="rv_bottomDrawableColorRadius"/>
+    <attr format="dimension" name="rv_bottomDrawableHeight"/>
+    <attr format="dimension" name="rv_bottomDrawableWidth"/>
+    <attr format="dimension" name="rv_bottomLeftRadius"/>
+    <attr format="reference|color" name="rv_bottomPressedDrawable"/>
+    <attr format="dimension" name="rv_bottomRightRadius"/>
+    <attr format="reference|color" name="rv_bottomSelectedDrawable"/>
+    <attr format="reference|color" name="rv_buttonCheckedDrawable"/>
+    <attr format="reference|color" name="rv_buttonDisabledDrawable"/>
+    <attr format="reference|color" name="rv_buttonDrawable"/>
+    <attr format="boolean" name="rv_buttonDrawableColorCircleEnable"/>
+    <attr format="dimension" name="rv_buttonDrawableColorRadius"/>
+    <attr format="dimension" name="rv_buttonDrawableHeight"/>
+    <attr format="dimension" name="rv_buttonDrawableWidth"/>
+    <attr format="reference|color" name="rv_buttonPressedDrawable"/>
+    <attr format="reference|color" name="rv_buttonSelectedDrawable"/>
+    <attr format="integer" name="rv_enterFadeDuration"/>
+    <attr format="integer" name="rv_exitFadeDuration"/>
+    <attr format="reference|color" name="rv_leftCheckedDrawable"/>
+    <attr format="reference|color" name="rv_leftDisabledDrawable"/>
+    <attr format="reference|color" name="rv_leftDrawable"/>
+    <attr format="boolean" name="rv_leftDrawableColorCircleEnable"/>
+    <attr format="dimension" name="rv_leftDrawableColorRadius"/>
+    <attr format="dimension" name="rv_leftDrawableHeight"/>
+    <attr format="dimension" name="rv_leftDrawableWidth"/>
+    <attr format="reference|color" name="rv_leftPressedDrawable"/>
+    <attr format="reference|color" name="rv_leftSelectedDrawable"/>
+    <attr format="dimension" name="rv_radius"/>
+    <attr format="boolean" name="rv_radiusHalfHeightEnable"/>
+    <attr format="reference|color" name="rv_rightCheckedDrawable"/>
+    <attr format="reference|color" name="rv_rightDisabledDrawable"/>
+    <attr format="reference|color" name="rv_rightDrawable"/>
+    <attr format="boolean" name="rv_rightDrawableColorCircleEnable"/>
+    <attr format="dimension" name="rv_rightDrawableColorRadius"/>
+    <attr format="dimension" name="rv_rightDrawableHeight"/>
+    <attr format="dimension" name="rv_rightDrawableWidth"/>
+    <attr format="reference|color" name="rv_rightPressedDrawable"/>
+    <attr format="reference|color" name="rv_rightSelectedDrawable"/>
+    <attr format="color" name="rv_rippleColor"/>
+    <attr format="boolean" name="rv_rippleEnable"/>
+    <attr format="boolean" name="rv_selected"/>
+    <attr format="color" name="rv_strokeCheckedColor"/>
+    <attr format="color" name="rv_strokeColor"/>
+    <attr format="dimension" name="rv_strokeDashGap"/>
+    <attr format="dimension" name="rv_strokeDashWidth"/>
+    <attr format="color" name="rv_strokeDisabledColor"/>
+    <attr format="color" name="rv_strokePressedColor"/>
+    <attr format="color" name="rv_strokeSelectedColor"/>
+    <attr format="dimension" name="rv_strokeWidth"/>
+    <attr format="color" name="rv_textCheckedColor"/>
+    <attr format="color" name="rv_textColor"/>
+    <attr format="color" name="rv_textDisabledColor"/>
+    <attr format="color" name="rv_textPressedColor"/>
+    <attr format="color" name="rv_textSelectedColor"/>
+    <attr format="reference|color" name="rv_topCheckedDrawable"/>
+    <attr format="reference|color" name="rv_topDisabledDrawable"/>
+    <attr format="reference|color" name="rv_topDrawable"/>
+    <attr format="boolean" name="rv_topDrawableColorCircleEnable"/>
+    <attr format="dimension" name="rv_topDrawableColorRadius"/>
+    <attr format="dimension" name="rv_topDrawableHeight"/>
+    <attr format="dimension" name="rv_topDrawableWidth"/>
+    <attr format="dimension" name="rv_topLeftRadius"/>
+    <attr format="reference|color" name="rv_topPressedDrawable"/>
+    <attr format="dimension" name="rv_topRightRadius"/>
+    <attr format="reference|color" name="rv_topSelectedDrawable"/>
+    <attr format="boolean" name="rv_widthHeightEqualEnable"/>
+    <attr format="reference" name="styleLoadingLayout"/>
+    <color name="color_000000">#000000</color>
+    <declare-styleable name="LoadingLayout"><attr format="reference" name="llEmptyResId"/><attr format="reference" name="llLoadingResId"/><attr format="reference" name="llErrorResId"/><attr format="reference" name="llEmptyImage"/><attr format="string" name="llEmptyText"/><attr format="reference" name="llErrorImage"/><attr format="dimension" name="llErrorImageMaxWidth"/><attr format="dimension" name="llErrorImageMaxHeight"/><attr format="dimension" name="llEmptyImageMaxWidth"/><attr format="dimension" name="llEmptyImageMaxHeight"/><attr format="string" name="llErrorText"/><attr format="string" name="llRetryText"/><attr format="color" name="llTextColor"/><attr format="dimension" name="llTextSize"/><attr format="color" name="llButtonTextColor"/><attr format="dimension" name="llButtonTextSize"/><attr format="reference" name="llButtonBackground"/></declare-styleable>
+    <declare-styleable name="MaterialProgressBar"><attr format="reference|color" name="progress_arcColor"/><attr format="reference|dimension" name="progress_borderWidth"/><attr format="reference|integer" name="progress_duration"/><attr format="boolean" name="progress_roundEnable"/></declare-styleable>
+    <declare-styleable name="MaxHeightRecyclerView"><attr format="reference|dimension" name="max_height"/><attr format="reference|dimension" name="item_height"/></declare-styleable>
+    <declare-styleable name="MyIndicator"><attr format="dimension" name="indicator_height"/><attr format="color" name="indicator_bottom_line_color"/><attr format="dimension" name="indicator_bottom_line_height"/><attr format="dimension" name="indicator_bottom_height"/><attr format="dimension" name="indicator_textSize"/><attr format="dimension" name="indicator_select_textSize"/><attr format="dimension" name="indicator_vertical_line_w"/><attr format="dimension" name="indicator_vertical_line_h"/><attr format="dimension" name="indicator_width"/><attr format="color" name="indicator_selected_color"/><attr format="color" name="indicator_normal_color"/><attr format="color" name="indicator_line_color"/><attr format="color" name="indicator_vertical_line_color"/><attr format="boolean" name="indicator_isBottom_line"/></declare-styleable>
+    <declare-styleable name="ProgressImageView"><attr format="color" name="progressTextColor"/><attr format="dimension" name="progressTextSize"/><attr format="color" name="progressStartColor"/><attr format="color" name="progressEndColor"/><attr format="integer" name="progressType">
+            <enum name="left" value="0"/>
+            <enum name="top" value="1"/>
+            <enum name="right" value="2"/>
+            <enum name="bottom" value="3"/>
+        </attr></declare-styleable>
+    <declare-styleable name="RadiusEditText"><attr name="rv_backgroundColor"/><attr name="rv_backgroundPressedColor"/><attr name="rv_backgroundDisabledColor"/><attr name="rv_backgroundSelectedColor"/><attr name="rv_backgroundCheckedColor"/><attr name="rv_strokeColor"/><attr name="rv_strokePressedColor"/><attr name="rv_strokeDisabledColor"/><attr name="rv_strokeSelectedColor"/><attr name="rv_strokeCheckedColor"/><attr name="rv_strokeWidth"/><attr name="rv_strokeDashWidth"/><attr name="rv_strokeDashGap"/><attr name="rv_radiusHalfHeightEnable"/><attr name="rv_widthHeightEqualEnable"/><attr name="rv_radius"/><attr name="rv_topLeftRadius"/><attr name="rv_topRightRadius"/><attr name="rv_bottomLeftRadius"/><attr name="rv_bottomRightRadius"/><attr name="rv_rippleColor"/><attr name="rv_rippleEnable"/><attr name="rv_selected"/><attr name="rv_enterFadeDuration"/><attr name="rv_exitFadeDuration"/><attr name="rv_textColor"/><attr name="rv_textPressedColor"/><attr name="rv_textDisabledColor"/><attr name="rv_textSelectedColor"/><attr name="rv_textCheckedColor"/><attr name="rv_leftDrawableColorRadius"/><attr name="rv_leftDrawableColorCircleEnable"/><attr name="rv_leftDrawableWidth"/><attr name="rv_leftDrawableHeight"/><attr name="rv_leftDrawable"/><attr name="rv_leftPressedDrawable"/><attr name="rv_leftDisabledDrawable"/><attr name="rv_leftSelectedDrawable"/><attr name="rv_leftCheckedDrawable"/><attr name="rv_topDrawableColorRadius"/><attr name="rv_topDrawableColorCircleEnable"/><attr name="rv_topDrawableWidth"/><attr name="rv_topDrawableHeight"/><attr name="rv_topDrawable"/><attr name="rv_topPressedDrawable"/><attr name="rv_topDisabledDrawable"/><attr name="rv_topSelectedDrawable"/><attr name="rv_topCheckedDrawable"/><attr name="rv_rightDrawableColorRadius"/><attr name="rv_rightDrawableColorCircleEnable"/><attr name="rv_rightDrawableWidth"/><attr name="rv_rightDrawableHeight"/><attr name="rv_rightDrawable"/><attr name="rv_rightPressedDrawable"/><attr name="rv_rightDisabledDrawable"/><attr name="rv_rightSelectedDrawable"/><attr name="rv_rightCheckedDrawable"/><attr name="rv_bottomDrawableColorRadius"/><attr name="rv_bottomDrawableColorCircleEnable"/><attr name="rv_bottomDrawableWidth"/><attr name="rv_bottomDrawableHeight"/><attr name="rv_bottomDrawable"/><attr name="rv_bottomPressedDrawable"/><attr name="rv_bottomDisabledDrawable"/><attr name="rv_bottomSelectedDrawable"/><attr name="rv_bottomCheckedDrawable"/></declare-styleable>
+    <declare-styleable name="RadiusFrameLayout"><attr name="rv_backgroundColor"/><attr name="rv_backgroundPressedColor"/><attr name="rv_backgroundDisabledColor"/><attr name="rv_backgroundSelectedColor"/><attr name="rv_backgroundCheckedColor"/><attr name="rv_strokeColor"/><attr name="rv_strokePressedColor"/><attr name="rv_strokeDisabledColor"/><attr name="rv_strokeSelectedColor"/><attr name="rv_strokeCheckedColor"/><attr name="rv_strokeWidth"/><attr name="rv_strokeDashWidth"/><attr name="rv_strokeDashGap"/><attr name="rv_radiusHalfHeightEnable"/><attr name="rv_widthHeightEqualEnable"/><attr name="rv_radius"/><attr name="rv_topLeftRadius"/><attr name="rv_topRightRadius"/><attr name="rv_bottomLeftRadius"/><attr name="rv_bottomRightRadius"/><attr name="rv_rippleColor"/><attr name="rv_rippleEnable"/><attr name="rv_selected"/><attr name="rv_enterFadeDuration"/><attr name="rv_exitFadeDuration"/></declare-styleable>
+    <declare-styleable name="RadiusLinearLayout"><attr name="rv_backgroundColor"/><attr name="rv_backgroundPressedColor"/><attr name="rv_backgroundDisabledColor"/><attr name="rv_backgroundSelectedColor"/><attr name="rv_backgroundCheckedColor"/><attr name="rv_strokeColor"/><attr name="rv_strokePressedColor"/><attr name="rv_strokeDisabledColor"/><attr name="rv_strokeSelectedColor"/><attr name="rv_strokeCheckedColor"/><attr name="rv_strokeWidth"/><attr name="rv_strokeDashWidth"/><attr name="rv_strokeDashGap"/><attr name="rv_radiusHalfHeightEnable"/><attr name="rv_widthHeightEqualEnable"/><attr name="rv_radius"/><attr name="rv_topLeftRadius"/><attr name="rv_topRightRadius"/><attr name="rv_bottomLeftRadius"/><attr name="rv_bottomRightRadius"/><attr name="rv_rippleColor"/><attr name="rv_rippleEnable"/><attr name="rv_selected"/><attr name="rv_enterFadeDuration"/><attr name="rv_exitFadeDuration"/></declare-styleable>
+    <declare-styleable name="RadiusRadioButton"><attr name="rv_backgroundColor"/><attr name="rv_backgroundPressedColor"/><attr name="rv_backgroundDisabledColor"/><attr name="rv_backgroundSelectedColor"/><attr name="rv_backgroundCheckedColor"/><attr name="rv_strokeColor"/><attr name="rv_strokePressedColor"/><attr name="rv_strokeDisabledColor"/><attr name="rv_strokeSelectedColor"/><attr name="rv_strokeCheckedColor"/><attr name="rv_strokeWidth"/><attr name="rv_strokeDashWidth"/><attr name="rv_strokeDashGap"/><attr name="rv_radiusHalfHeightEnable"/><attr name="rv_widthHeightEqualEnable"/><attr name="rv_radius"/><attr name="rv_topLeftRadius"/><attr name="rv_topRightRadius"/><attr name="rv_bottomLeftRadius"/><attr name="rv_bottomRightRadius"/><attr name="rv_rippleColor"/><attr name="rv_rippleEnable"/><attr name="rv_selected"/><attr name="rv_enterFadeDuration"/><attr name="rv_exitFadeDuration"/><attr name="rv_textColor"/><attr name="rv_textPressedColor"/><attr name="rv_textDisabledColor"/><attr name="rv_textSelectedColor"/><attr name="rv_textCheckedColor"/><attr name="rv_leftDrawableColorRadius"/><attr name="rv_leftDrawableColorCircleEnable"/><attr name="rv_leftDrawableWidth"/><attr name="rv_leftDrawableHeight"/><attr name="rv_leftDrawable"/><attr name="rv_leftPressedDrawable"/><attr name="rv_leftDisabledDrawable"/><attr name="rv_leftSelectedDrawable"/><attr name="rv_leftCheckedDrawable"/><attr name="rv_topDrawableColorRadius"/><attr name="rv_topDrawableColorCircleEnable"/><attr name="rv_topDrawableWidth"/><attr name="rv_topDrawableHeight"/><attr name="rv_topDrawable"/><attr name="rv_topPressedDrawable"/><attr name="rv_topDisabledDrawable"/><attr name="rv_topSelectedDrawable"/><attr name="rv_topCheckedDrawable"/><attr name="rv_rightDrawableColorRadius"/><attr name="rv_rightDrawableColorCircleEnable"/><attr name="rv_rightDrawableWidth"/><attr name="rv_rightDrawableHeight"/><attr name="rv_rightDrawable"/><attr name="rv_rightPressedDrawable"/><attr name="rv_rightDisabledDrawable"/><attr name="rv_rightSelectedDrawable"/><attr name="rv_rightCheckedDrawable"/><attr name="rv_bottomDrawableColorRadius"/><attr name="rv_bottomDrawableColorCircleEnable"/><attr name="rv_bottomDrawableWidth"/><attr name="rv_bottomDrawableHeight"/><attr name="rv_bottomDrawable"/><attr name="rv_bottomPressedDrawable"/><attr name="rv_bottomDisabledDrawable"/><attr name="rv_bottomSelectedDrawable"/><attr name="rv_bottomCheckedDrawable"/><attr name="rv_buttonDrawableColorRadius"/><attr name="rv_buttonDrawableColorCircleEnable"/><attr name="rv_buttonDrawableWidth"/><attr name="rv_buttonDrawableHeight"/><attr name="rv_buttonDrawable"/><attr name="rv_buttonPressedDrawable"/><attr name="rv_buttonDisabledDrawable"/><attr name="rv_buttonSelectedDrawable"/><attr name="rv_buttonCheckedDrawable"/></declare-styleable>
+    <declare-styleable name="RadiusRelativeLayout"><attr name="rv_backgroundColor"/><attr name="rv_backgroundPressedColor"/><attr name="rv_backgroundDisabledColor"/><attr name="rv_backgroundSelectedColor"/><attr name="rv_backgroundCheckedColor"/><attr name="rv_strokeColor"/><attr name="rv_strokePressedColor"/><attr name="rv_strokeDisabledColor"/><attr name="rv_strokeSelectedColor"/><attr name="rv_strokeCheckedColor"/><attr name="rv_strokeWidth"/><attr name="rv_strokeDashWidth"/><attr name="rv_strokeDashGap"/><attr name="rv_radiusHalfHeightEnable"/><attr name="rv_widthHeightEqualEnable"/><attr name="rv_radius"/><attr name="rv_topLeftRadius"/><attr name="rv_topRightRadius"/><attr name="rv_bottomLeftRadius"/><attr name="rv_bottomRightRadius"/><attr name="rv_rippleColor"/><attr name="rv_rippleEnable"/><attr name="rv_selected"/><attr name="rv_enterFadeDuration"/><attr name="rv_exitFadeDuration"/></declare-styleable>
+    <declare-styleable name="RadiusSwitch"><attr name="rv_backgroundColor"/><attr name="rv_backgroundPressedColor"/><attr name="rv_backgroundDisabledColor"/><attr name="rv_backgroundSelectedColor"/><attr name="rv_backgroundCheckedColor"/><attr name="rv_strokeColor"/><attr name="rv_strokePressedColor"/><attr name="rv_strokeDisabledColor"/><attr name="rv_strokeSelectedColor"/><attr name="rv_strokeCheckedColor"/><attr name="rv_strokeWidth"/><attr name="rv_strokeDashWidth"/><attr name="rv_strokeDashGap"/><attr name="rv_radiusHalfHeightEnable"/><attr name="rv_widthHeightEqualEnable"/><attr name="rv_radius"/><attr name="rv_topLeftRadius"/><attr name="rv_topRightRadius"/><attr name="rv_bottomLeftRadius"/><attr name="rv_bottomRightRadius"/><attr name="rv_rippleColor"/><attr name="rv_rippleEnable"/><attr name="rv_selected"/><attr name="rv_enterFadeDuration"/><attr name="rv_exitFadeDuration"/><attr name="rv_textColor"/><attr name="rv_textPressedColor"/><attr name="rv_textDisabledColor"/><attr name="rv_textSelectedColor"/><attr name="rv_textCheckedColor"/><attr name="rv_leftDrawableColorRadius"/><attr name="rv_leftDrawableColorCircleEnable"/><attr name="rv_leftDrawableWidth"/><attr name="rv_leftDrawableHeight"/><attr name="rv_leftDrawable"/><attr name="rv_leftPressedDrawable"/><attr name="rv_leftDisabledDrawable"/><attr name="rv_leftSelectedDrawable"/><attr name="rv_leftCheckedDrawable"/><attr name="rv_topDrawableColorRadius"/><attr name="rv_topDrawableColorCircleEnable"/><attr name="rv_topDrawableWidth"/><attr name="rv_topDrawableHeight"/><attr name="rv_topDrawable"/><attr name="rv_topPressedDrawable"/><attr name="rv_topDisabledDrawable"/><attr name="rv_topSelectedDrawable"/><attr name="rv_topCheckedDrawable"/><attr name="rv_rightDrawableColorRadius"/><attr name="rv_rightDrawableColorCircleEnable"/><attr name="rv_rightDrawableWidth"/><attr name="rv_rightDrawableHeight"/><attr name="rv_rightDrawable"/><attr name="rv_rightPressedDrawable"/><attr name="rv_rightDisabledDrawable"/><attr name="rv_rightSelectedDrawable"/><attr name="rv_rightCheckedDrawable"/><attr name="rv_bottomDrawableColorRadius"/><attr name="rv_bottomDrawableColorCircleEnable"/><attr name="rv_bottomDrawableWidth"/><attr name="rv_bottomDrawableHeight"/><attr name="rv_bottomDrawable"/><attr name="rv_bottomPressedDrawable"/><attr name="rv_bottomDisabledDrawable"/><attr name="rv_bottomSelectedDrawable"/><attr name="rv_bottomCheckedDrawable"/><attr name="rv_buttonDrawableColorRadius"/><attr name="rv_buttonDrawableColorCircleEnable"/><attr name="rv_buttonDrawableWidth"/><attr name="rv_buttonDrawableHeight"/><attr name="rv_buttonDrawable"/><attr name="rv_buttonPressedDrawable"/><attr name="rv_buttonDisabledDrawable"/><attr name="rv_buttonSelectedDrawable"/><attr name="rv_buttonCheckedDrawable"/><attr format="dimension" name="rv_thumbDrawableWidth"/><attr format="dimension" name="rv_thumbDrawableHeight"/><attr format="reference|color" name="rv_thumbDrawable"/><attr format="reference|color" name="rv_thumbPressedDrawable"/><attr format="reference|color" name="rv_thumbDisabledDrawable"/><attr format="reference|color" name="rv_thumbSelectedDrawable"/><attr format="reference|color" name="rv_thumbCheckedDrawable"/><attr format="color" name="rv_thumbStrokeColor"/><attr format="color" name="rv_thumbStrokePressedColor"/><attr format="color" name="rv_thumbStrokeDisabledColor"/><attr format="color" name="rv_thumbStrokeSelectedColor"/><attr format="color" name="rv_thumbStrokeCheckedColor"/><attr format="dimension" name="rv_thumbStrokeWidth"/><attr format="dimension" name="rv_thumbRadius"/><attr format="dimension" name="rv_trackDrawableWidth"/><attr format="dimension" name="rv_trackDrawableHeight"/><attr format="reference|color" name="rv_trackDrawable"/><attr format="reference|color" name="rv_trackPressedDrawable"/><attr format="reference|color" name="rv_trackDisabledDrawable"/><attr format="reference|color" name="rv_trackSelectedDrawable"/><attr format="reference|color" name="rv_trackCheckedDrawable"/><attr format="color" name="rv_trackStrokeColor"/><attr format="color" name="rv_trackStrokePressedColor"/><attr format="color" name="rv_trackStrokeDisabledColor"/><attr format="color" name="rv_trackStrokeSelectedColor"/><attr format="color" name="rv_trackStrokeCheckedColor"/><attr format="dimension" name="rv_trackStrokeWidth"/><attr format="dimension" name="rv_trackRadius"/></declare-styleable>
+    <declare-styleable name="RadiusTextView"><attr name="rv_backgroundColor"/><attr name="rv_backgroundPressedColor"/><attr name="rv_backgroundDisabledColor"/><attr name="rv_backgroundSelectedColor"/><attr name="rv_backgroundCheckedColor"/><attr name="rv_strokeColor"/><attr name="rv_strokePressedColor"/><attr name="rv_strokeDisabledColor"/><attr name="rv_strokeSelectedColor"/><attr name="rv_strokeCheckedColor"/><attr name="rv_strokeWidth"/><attr name="rv_strokeDashWidth"/><attr name="rv_strokeDashGap"/><attr name="rv_radiusHalfHeightEnable"/><attr name="rv_widthHeightEqualEnable"/><attr name="rv_radius"/><attr name="rv_topLeftRadius"/><attr name="rv_topRightRadius"/><attr name="rv_bottomLeftRadius"/><attr name="rv_bottomRightRadius"/><attr name="rv_rippleColor"/><attr name="rv_rippleEnable"/><attr name="rv_selected"/><attr name="rv_enterFadeDuration"/><attr name="rv_exitFadeDuration"/><attr name="rv_textColor"/><attr name="rv_textPressedColor"/><attr name="rv_textDisabledColor"/><attr name="rv_textSelectedColor"/><attr name="rv_textCheckedColor"/><attr name="rv_leftDrawableColorRadius"/><attr name="rv_leftDrawableColorCircleEnable"/><attr name="rv_leftDrawableWidth"/><attr name="rv_leftDrawableHeight"/><attr name="rv_leftDrawable"/><attr name="rv_leftPressedDrawable"/><attr name="rv_leftDisabledDrawable"/><attr name="rv_leftSelectedDrawable"/><attr name="rv_leftCheckedDrawable"/><attr name="rv_topDrawableColorRadius"/><attr name="rv_topDrawableColorCircleEnable"/><attr name="rv_topDrawableWidth"/><attr name="rv_topDrawableHeight"/><attr name="rv_topDrawable"/><attr name="rv_topPressedDrawable"/><attr name="rv_topDisabledDrawable"/><attr name="rv_topSelectedDrawable"/><attr name="rv_topCheckedDrawable"/><attr name="rv_rightDrawableColorRadius"/><attr name="rv_rightDrawableColorCircleEnable"/><attr name="rv_rightDrawableWidth"/><attr name="rv_rightDrawableHeight"/><attr name="rv_rightDrawable"/><attr name="rv_rightPressedDrawable"/><attr name="rv_rightDisabledDrawable"/><attr name="rv_rightSelectedDrawable"/><attr name="rv_rightCheckedDrawable"/><attr name="rv_bottomDrawableColorRadius"/><attr name="rv_bottomDrawableColorCircleEnable"/><attr name="rv_bottomDrawableWidth"/><attr name="rv_bottomDrawableHeight"/><attr name="rv_bottomDrawable"/><attr name="rv_bottomPressedDrawable"/><attr name="rv_bottomDisabledDrawable"/><attr name="rv_bottomSelectedDrawable"/><attr name="rv_bottomCheckedDrawable"/></declare-styleable>
+    <declare-styleable name="TitleBarView"><attr format="boolean" name="title_immersible"/><attr format="dimension" name="title_outPadding"/><attr format="dimension" name="title_actionPadding"/><attr format="dimension" name="title_centerLayoutPadding"/><attr format="boolean" name="title_centerGravityLeft"/><attr format="dimension" name="title_centerGravityLeftPadding"/><attr format="boolean" name="title_statusBarLightMode"/><attr format="float" name="title_viewPressedAlpha"/><attr format="color|reference" name="title_statusBackground"/><attr format="color|reference" name="title_dividerBackground"/><attr format="dimension" name="title_dividerHeight"/><attr format="boolean" name="title_dividerVisible"/><attr format="string" name="title_leftText"/><attr format="dimension" name="title_leftTextSize"/><attr format="color|reference" name="title_leftTextColor"/><attr format="color|reference" name="title_leftTextBackground"/><attr format="reference" name="title_leftTextDrawable"/><attr format="dimension" name="title_leftTextDrawableWidth"/><attr format="dimension" name="title_leftTextDrawableHeight"/><attr format="dimension" name="title_leftTextDrawablePadding"/><attr format="string" name="title_titleMainText"/><attr format="dimension" name="title_titleMainTextSize"/><attr format="color|reference" name="title_titleMainTextColor"/><attr format="color|reference" name="title_titleMainTextBackground"/><attr format="boolean" name="title_titleMainTextFakeBold"/><attr format="boolean" name="title_titleMainTextMarquee"/><attr format="string" name="title_titleSubText"/><attr format="dimension" name="title_titleSubTextSize"/><attr format="color|reference" name="title_titleSubTextColor"/><attr format="color|reference" name="title_titleSubTextBackground"/><attr format="boolean" name="title_titleSubTextFakeBold"/><attr format="boolean" name="title_titleSubTextMarquee"/><attr format="string" name="title_rightText"/><attr format="dimension" name="title_rightTextSize"/><attr format="color|reference" name="title_rightTextColor"/><attr format="color|reference" name="title_rightTextBackground"/><attr format="reference" name="title_rightTextDrawable"/><attr format="dimension" name="title_rightTextDrawableWidth"/><attr format="dimension" name="title_rightTextDrawableHeight"/><attr format="dimension" name="title_rightTextDrawablePadding"/><attr format="dimension" name="title_actionTextSize"/><attr format="color|reference" name="title_actionTextColor"/><attr format="color|reference" name="title_actionTextBackground"/></declare-styleable>
+    <item name="common_view_pager_item_tag" type="id"/>
+    <item name="delegate_container" type="id"/>
+    <item name="empty_image" type="id"/>
+    <item name="empty_text" type="id"/>
+    <item name="error_image" type="id"/>
+    <item name="error_text" type="id"/>
+    <item name="retry_button" type="id"/>
+    <item name="vp" type="id"/>
+    <string name="app_name">paperPlane</string>
+    <style name="AnimDown" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_scale_in</item>
+        <item name="android:windowExitAnimation">@anim/push_scale_out</item>
+    </style>
+    <style name="AnimHorizontal" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_scale_left_in</item>
+        <item name="android:windowExitAnimation">@anim/push_scale_left_out</item>
+    </style>
+    <style name="AnimRight" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_scale_right_in</item>
+        <item name="android:windowExitAnimation">@anim/push_scale_right_out</item>
+    </style>
+    <style name="AnimUp" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+    <style name="LoadingLayout"/>
+    <style name="LoadingLayout.Style">
+        <item name="llEmptyResId">@layout/_loading_layout_empty</item>
+        <item name="llLoadingResId">@layout/_loading_layout_loading</item>
+        <item name="llErrorResId">@layout/_loading_layout_error</item>
+
+        <item name="llTextColor">#999999</item>
+        <item name="llTextSize">@dimen/dp_16</item>
+
+        <item name="llButtonTextColor">#999999</item>
+        <item name="llButtonTextSize">@dimen/dp_16</item>
+        <item name="llButtonBackground">@drawable/_loading_layout_button</item>
+
+        <item name="llEmptyImage">@color/color_000000</item>
+        <item name="llEmptyText">暂无数据</item>
+        <item name="llErrorImage">@color/color_000000</item>
+        <item name="llErrorText">无网络连接，请检查您的网络...</item>
+        <item name="llRetryText">加载失败，点击重试</item>
+    </style>
+    <style name="base_anim_bottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/base_slide_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/base_slide_bottom_out</item>
+    </style>
+    <style name="base_theme_dialog" parent="@style/Theme.AppCompat.Dialog">
+        <item name="android:windowFrame">@android:color/transparent</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:background">@android:color/transparent</item>
+        <!-- 背景色 -->
+        <item name="android:windowBackground">@color/white</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+        <item name="android:windowFullscreen">true</item>
+        <!-- 全屏 -->
+    </style>
+</resources>

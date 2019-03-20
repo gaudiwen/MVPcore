@@ -1,0 +1,1 @@
+include ':app',':paperPlane-core', ':paperPlane-annotation'

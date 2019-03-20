@@ -1,0 +1,28 @@
+/**
+ * 在主项目的根目录下创建config.gradle文件
+ * 在这里单独处理统一依赖问题
+ * 注意需要在根目录的build.gradle中进行引入
+ */
+ext {
+    android = [
+            compileSdkVersion: 28,
+            buildToolsVersion: "28.0.2",
+            minSdkVersion    : 19,
+            targetSdkVersion : 22,
+            modeleVersion : 1,
+            modeleName : "1.1.0",
+            appVersionCode : 123,
+            appVersionName : "1.2.3"
+    ]
+    //(25.4.0)
+    supportLibrary = "25.4.0"
+
+    //supportLibraries dependencies
+    supportDependencies = [
+            supportAppcompatV7: "com.android.support:appcompat-v7:${supportLibrary}",
+            supportV4       : "com.android.support:support-v4:${supportLibrary}",
+            suppoutDesign   : "com.android.support:design:${supportLibrary}",
+            recyclerview : "com.android.support:recyclerview-v7:${supportLibrary}",
+            cardView : "com.android.support:cardview-v7:${supportLibrary}"
+    ]
+}

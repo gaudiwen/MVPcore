@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<duofriend.com.paperplane.view.radius.RadiusLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:rv_radius="10dp"
+    app:rv_backgroundColor="#ffffff"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="@dimen/dp_13"
+        android:paddingBottom="@dimen/dp_13"
+        android:textColor="#333333"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f0f4f7" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:orientation="horizontal">
+
+        <duofriend.com.paperplane.view.radius.RadiusTextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/dp_10"
+            android:text="取消"
+            app:rv_bottomLeftRadius="10dp"
+            android:textColor="#999999"
+            app:rv_backgroundColor="#ffffff"
+            app:rv_backgroundPressedColor="#eeeeee"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#f0f4f7" />
+
+        <duofriend.com.paperplane.view.radius.RadiusTextView
+            android:id="@+id/tv_confirm"
+            android:layout_width="0dp"
+            app:rv_bottomRightRadius="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/dp_10"
+            android:text="确认"
+            app:rv_backgroundColor="#ffffff"
+            app:rv_backgroundPressedColor="#eeeeee"
+            android:textColor="#e4bb6e"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</duofriend.com.paperplane.view.radius.RadiusLinearLayout>
